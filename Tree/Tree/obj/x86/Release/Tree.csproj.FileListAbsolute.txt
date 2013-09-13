@@ -1,0 +1,5 @@
+c:\users\vartotojas\documents\visual studio 2010\Projects\Tree\Tree\bin\Release\Tree.exe
+c:\users\vartotojas\documents\visual studio 2010\Projects\Tree\Tree\bin\Release\Tree.pdb
+c:\users\vartotojas\documents\visual studio 2010\Projects\Tree\Tree\obj\x86\Release\ResolveAssemblyReference.cache
+c:\users\vartotojas\documents\visual studio 2010\Projects\Tree\Tree\obj\x86\Release\Tree.exe
+c:\users\vartotojas\documents\visual studio 2010\Projects\Tree\Tree\obj\x86\Release\Tree.pdb
