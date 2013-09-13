@@ -15,7 +15,7 @@ namespace Tree
             do
             {
                 Console.WriteLine("Number of apples now: {0}", tree.GetNumber());
-                Console.WriteLine("Select\n 1 - Grow Apples\n 0 - Exit");
+                Console.WriteLine("Select\n 1 - Grow Apples\n 2 - Shake the tree\n 0 - Exit");
                 key = Convert.ToInt32(Console.ReadLine());
                 Console.Clear();
 
@@ -25,16 +25,14 @@ namespace Tree
                     case 0:                   
                         break;              
                    
-                    case 1:                       
-                        int apples;                       
-                        Random rand = new Random();
-                        apples = rand.Next(100);
-
-                        tree.Grow(apples);
-                        Console.WriteLine("{0} apples were grown", apples);
-
+                    case 1:                                             
+                        tree.Grow();                    
                         break;   
                     
+                    case 2:
+                        tree.Shake();
+                        break;
+
                     default:
                         Console.WriteLine("You entered wrong key!");
                         break;
@@ -56,9 +54,24 @@ namespace Tree
             return number;
         }
 
-        public void Grow(int NumberOfGrowingApples)
+        public void Grow()
         {
-            number += NumberOfGrowingApples;
+            int apples;
+            Random rand = new Random();
+            apples = rand.Next(100);
+
+            this.number += apples;
+            Console.WriteLine("{0} apples were grown", apples);
+        }
+
+        public void Shake()
+        {
+            int apples;
+            Random rand = new Random();
+            apples = rand.Next(GetNumber() + 1);
+
+            this.number -= apples;
+            Console.WriteLine("{0} apples were shaked", apples);
         }
     }
 
