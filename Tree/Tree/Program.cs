@@ -9,14 +9,39 @@ namespace Tree
     {
         static void Main(string[] args)
         {
-            int key;
+            int key = 1;
             Tree tree = new Tree();
+            
 
             do
             {
+                if (key == 1)
+                {
+                    Console.WriteLine("Press\n 1 - to Blossom\n 0 - to Exit");
+                    key = Convert.ToInt32(Console.ReadLine());
+
+                    switch (key)
+                    {
+                        case 1:
+                            int flowers = tree.Blossom();
+                            tree.Grow(flowers);
+                            break;
+
+                        case 0:
+                            break;
+
+                        default:
+                            Console.WriteLine("You entered the wrong key!");
+                            break;
+                    }
+                }
+                if (key == 0)
+                    break;
+
+                Console.Clear();
                 Console.WriteLine("Number of apples now: {0}", tree.GetNumber());
                 Console.WriteLine("Number of seeds now: {0}", tree.GetSeeds());
-                Console.WriteLine("Select\n 1 - Grow Apples\n 2 - Shake the tree\n 0 - Exit");
+                Console.WriteLine("Select\n 1 - Reset\n 2 - Shake the tree\n 0 - Exit");
                 key = Convert.ToInt32(Console.ReadLine());
                 Console.Clear();
 
@@ -26,8 +51,8 @@ namespace Tree
                     case 0:                   
                         break;              
                    
-                    case 1:                                             
-                        tree.Grow();                    
+                    case 1:
+                        tree.Reset();                  
                         break;   
                     
                     case 2:
@@ -58,12 +83,9 @@ namespace Tree
             return number;
         }
 
-        public void Grow()
+        public void Grow(int num_apples)
         {
-            int num_apples;
             Random rand = new Random();
-            num_apples = rand.Next(100);
-
             for (int i = 1; i <= num_apples; i++)
             {
                 Apple apple = new Apple(rand.Next(10));
@@ -72,6 +94,14 @@ namespace Tree
 
             this.number += num_apples;
             Console.WriteLine("{0} apples were grown", num_apples);
+        }
+
+        public int Blossom()
+        {
+            Random rand = new Random();
+            int num_flowers = rand.Next(300);
+
+            return num_flowers;
         }
 
         public int GetSeeds()
@@ -92,6 +122,13 @@ namespace Tree
 
             this.number -= apples;
             Console.WriteLine("{0} apples were shaked", apples);
+        }
+
+        public void Reset()
+        {
+            this.number = 0;
+            apples_list.Clear();
+            Console.WriteLine("The progress was reseted");
         }
     }
 
