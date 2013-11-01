@@ -1,0 +1,46 @@
+<Report>
+ <fixed>
+  <element>
+    <full_name>Shop ID</full_name>
+	<column_name>shop_id</column_name>
+	<value>4</value>
+  </element>
+ </fixed>
+ <output>
+  <element>
+    <full_name>City</full_name>
+	<column_name>region</column_name>
+	<table>Shops</table>
+  </element>
+  <element>
+    <full_name>Apple</full_name>
+	<column_name>name</column_name>
+	<table>apple</table>
+  </element>
+  <element>
+    <full_name>Exp. date</full_name>
+	<column_name>exp_date</column_name>
+	<table>apple</table>
+  </element>
+  <element>
+    <full_name>Day</full_name>
+	<column_name>day</column_name>
+	<table>Date</table>
+  </element>
+  <element>
+    <full_name>Month</full_name>
+	<column_name>month</column_name>
+	<table>Date</table>
+  </element>
+  <element>
+    <full_name>Year</full_name>
+	<column_name>year</column_name>
+	<table>Date</table>
+  </element>
+  <element>
+    <full_name>Price (1kg)</full_name>
+	<column_name>price_for_kg</column_name>
+	<table>Sales</table>
+  </element>
+ </output>
+</Report>

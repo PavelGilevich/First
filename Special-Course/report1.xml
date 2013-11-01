@@ -1,0 +1,41 @@
+<Report>
+<fixed>
+  <element>
+    <full_name>Apple ID</full_name>
+	<column_name>apple_ID</column_name>
+	<value>4</value>
+  </element>
+</fixed>
+<output>
+  <element>
+    <full_name>Apple name</full_name>
+    <table>apple</table>
+    <column_name>name</column_name>
+  </element>
+  <element>
+    <full_name>Apple's region</full_name>
+    <table>apple</table>
+    <column_name>region</column_name>
+  </element>
+  <element>
+    <full_name>Shop name</full_name>
+    <table>Shops</table>
+    <column_name>name</column_name>
+  </element>
+  <element>
+    <full_name>Shop region</full_name>
+    <table>Shops</table>
+    <column_name>region</column_name>
+  </element>
+  <element>
+    <full_name>Shop address</full_name>
+	<table>Shops</table>
+	<column_name>address</column_name>
+  </element>
+  <element>
+    <full_name>Weight</full_name>
+    <table>Sales</table>
+    <column_name>weight</column_name>
+  </element>
+</output>
+</Report>
