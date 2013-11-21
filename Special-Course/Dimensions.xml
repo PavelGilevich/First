@@ -1,0 +1,125 @@
+<Report_Dimensions>
+  <CubeInfo>
+    <name>Apples' sales</name>
+	<ID>1</ID>
+  </CubeInfo>
+  <Dimensions>
+    <Dimension>
+      <DimensionInfo>
+	    <ID>1</ID>
+	    <name>Яблоки</name>
+	    <info>Информация о различных сортах яблок</info>
+	  </DimensionInfo>
+	  <Attributes>
+	    <Attribute>
+	      <ID>1</ID>
+		  <name>ID яблока</name>
+		  <real_name>ID</real_name>
+		  <type>integer</type>
+		</Attribute>
+		<Attribute>
+		  <ID>2</ID>
+		  <name>Название сорта</name>
+		  <real_name>name</real_name>
+		  <type>text</type>
+		</Attribute>
+		<Attribute>
+		  <ID>3</ID>
+		  <name>Место сбора</name>
+		  <real_name>region</real_name>
+		  <type>text</type>
+		</Attribute>
+		<Attribute>
+		  <ID>4</ID>
+		  <name>Срок годности</name>
+		  <real_name>exp_date</real_name>
+		  <type>Date</type>
+		</Attribute>
+	  </Attributes>
+	  <TableInfo>
+	    <name>apple</name>
+		<PrimaryKey>ID</PrimaryKey>
+	  </TableInfo>
+	</Dimension>
+	<Dimension>
+      <DimensionInfo>
+	    <ID>2</ID>
+	    <name>Магазины</name>
+	    <info>Информация о магазинах, в которых совершались продажи яблок</info>
+	  </DimensionInfo>
+	  <Attributes>
+	    <Attribute>
+	      <ID>1</ID>
+		  <name>ID магазина</name>
+		  <real_name>ID</real_name>
+		  <type>integer</type>
+		</Attribute>
+		<Attribute>
+		  <ID>2</ID>
+		  <name>Название магазина</name>
+		  <real_name>name</real_name>
+		  <type>text</type>
+		</Attribute>
+		<Attribute>
+		  <ID>3</ID>
+		  <name>Город</name>
+		  <real_name>region</real_name>
+		  <type>text</type>
+		</Attribute>
+		<Attribute>
+		  <ID>4</ID>
+		  <name>Адрес</name>
+		  <real_name>address</real_name>
+		  <type>text</type>
+		</Attribute>
+		<Attribute>
+		  <ID>5</ID>
+		  <name>Телефон</name>
+		  <real_name>telephone</real_name>
+		  <type>text</type>
+		</Attribute>
+	  </Attributes>
+	  <TableInfo>
+	    <name>Shops</name>
+		<PrimaryKey>ID</PrimaryKey>
+	  </TableInfo>
+	</Dimension>
+	<Dimension>
+	  <DimensionInfo>
+	    <ID>3</ID>
+	    <name>Дата</name>
+	    <info>Даты продаж</info>
+	  </DimensionInfo>
+	  <Attributes>
+	    <Attribute>
+	      <ID>1</ID>
+		  <name>ID даты</name>
+		  <real_name>ID</real_name>
+		  <type>integer</type>
+		</Attribute>
+		<Attribute>
+		  <ID>2</ID>
+		  <name>День</name>
+		  <real_name>day</real_name>
+		  <type>integer</type>
+		</Attribute>
+		<Attribute>
+		  <ID>3</ID>
+		  <name>Месяц</name>
+		  <real_name>month</real_name>
+		  <type>text</type>
+		</Attribute>
+		<Attribute>
+		  <ID>4</ID>
+		  <name>Год</name>
+		  <real_name>year</real_name>
+		  <type>integer</type>
+		</Attribute>
+	  </Attributes>
+	  <TableInfo>
+	    <name>Date</name>
+		<PrimaryKey>ID</PrimaryKey>
+	  </TableInfo>
+	</Dimension>
+  </Dimensions>
+</Report_Dimensions>

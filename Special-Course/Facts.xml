@@ -1,0 +1,43 @@
+<Report_Facts>
+  <CubeInfo>
+    <name>Apples' sales</name>
+	<ID> 1 </ID>
+  </CubeInfo>
+  <Datatable>
+    <name>Продажи</name>
+	<real_name>Sales</real_name>
+	<measure>4</measure>
+	<Fields>
+	  <Field>
+	    <ID>1</ID>
+		<name>ID яблока</name>
+		<real_name>apple_id</real_name>
+		<dimension>1</dimension>
+	  </Field>
+	  <Field>
+	    <ID>2</ID>
+		<name>ID магазина</name>
+		<real_name>shop_id</real_name>
+		<dimension>2</dimension>
+	  </Field>
+	  <Field>
+	    <ID>3</ID>
+		<name>ID даты</name>
+		<real_name>date_id</real_name>
+		<dimension>3</dimension>
+	  </Field>
+	  <Field>
+	    <ID>4</ID>
+		<name>Вес</name>
+		<real_name>weight</real_name>
+		<dimension></dimension>
+	  </Field>
+	  <Field>
+	    <ID>5</ID>
+		<name>Цена за килограмм</name>
+		<real_name>price_for_kg</real_name>
+		<dimension></dimension>
+	  </Field>
+	</Fields>
+  </Datatable>
+</Report_Facts>
